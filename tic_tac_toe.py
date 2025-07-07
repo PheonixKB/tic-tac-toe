@@ -39,6 +39,7 @@ def checkWins(grid,current_player):
 def playGame():
     grid=[[' ' for _ in range(3) ] for _ in range(3)]
     current_player='X'
+    print("Current Player: X")
     for move in range(9):
         print_grid(grid)
         takeMoves(grid,current_player)
@@ -47,6 +48,7 @@ def playGame():
             print(f'Player {current_player} wins.')
             return
         current_player='O' if current_player=='X' else 'X'
+        print("Current Player: O")
     print('Tie.')
 while True:
     playGame()
