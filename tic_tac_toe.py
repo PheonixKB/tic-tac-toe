@@ -48,7 +48,7 @@ def playGame():
             print(f'Player {current_player} wins.')
             return
         current_player='O' if current_player=='X' else 'X'
-        print("Current Player: O")
+        print(f"Current Player: {current_player}")
     print('Tie.')
 while True:
     playGame()
